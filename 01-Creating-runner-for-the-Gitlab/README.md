@@ -1,0 +1,1 @@
+# I will ready for the first basic things first then will go with the rest of the setp
