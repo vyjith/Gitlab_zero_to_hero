@@ -317,8 +317,8 @@ Pipeline
 
 ## 📖 Progress
 
-* [x] GitLab stages and jobs
-* [x] GitLab Runner
+* [ ] GitLab stages and jobs
+* [ ] GitLab Runner
 * [ ] Docker Executor
 * [ ] GitLab Variables
 * [ ] Artifacts
