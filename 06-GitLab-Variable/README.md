@@ -67,3 +67,8 @@ test-job
     - echo "Running test on the branch: $CI_COMMIT_REF_NAME"
     - echo "Building the pipeline ID: $CI_PIPELINE_ID"
 ```
+
+## Secret variable
+We can add CI/CD variables to the project setting. Users with a maintainer role can add/update project CI/CD variables.To add/update variables in the project settings:
+1) Select Project’s Settings --> CI/CD and then expand the Variables section1.
+2) Select Add variable
