@@ -9,13 +9,14 @@
 stage:
   - build
   - test
+
 build-job:
   stage: build
   only:
     - main
-   script:
-     - echo "Building starting"
-docker-test-job
+  script:
+    - echo "Building starting"
+docker-test-job:
   stage: test
   except:
     - main
