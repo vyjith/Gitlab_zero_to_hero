@@ -20,7 +20,7 @@ build-job:
 
 **In GitLab CI/CD, predefined variables are variables that are set byGitLab and are available for use in your CI/CD pipeline scripts withoutexplicit definition.**
 
-```yaml
+```bash
 CI_JOB_NAME: The name of the current job.Example: If you have a job named "build," CI_JOB_NAME will be set to "build."
 CI_PIPELINE_ID: The unique identifier of the current pipeline.Example: This variable contains the pipeline ID.
 General/context
