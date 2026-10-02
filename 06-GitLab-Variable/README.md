@@ -72,3 +72,13 @@ test-job
 We can add CI/CD variables to the project setting. Users with a maintainer role can add/update project CI/CD variables.To add/update variables in the project settings:
 1) Select Project’s Settings --> CI/CD and then expand the Variables section1.
 2) Select Add variable
+
+```yaml
+stage:
+  - build
+build-job:
+  stage: build
+  script:
+    - echo "Deploying using API Key"
+    - ./deploy_script.sh $API_KEY
+```
