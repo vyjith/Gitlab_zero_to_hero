@@ -23,7 +23,7 @@ build-job:
 ```yaml
 CI_JOB_NAME: The name of the current job.Example: If you have a job named "build," CI_JOB_NAME will be set to "build."
 CI_PIPELINE_ID: The unique identifier of the current pipeline.Example: This variable contains the pipeline ID.
-General/context
+# General/context
 CI: true when running in CI
 CI_SERVER_URL: the GitLab instance URL
 CI_API_V4_URL: API v4 root URL
