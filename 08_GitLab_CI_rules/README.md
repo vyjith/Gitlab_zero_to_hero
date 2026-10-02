@@ -11,6 +11,22 @@ rules:
   - $CI_COMMIT_BRANCH == "main"
 ```
 
+```yaml
+Rule 1 ── match? ──YES──> RUN JOB
+   │
+   NO
+   ↓
+Rule 2 ── match? ──YES──> RUN JOB
+   │
+   NO
+   ↓
+Rule 3 ── match? ──YES──> RUN JOB
+   │
+   NO
+   ↓
+JOB NOT ADDED
+```
+
 ## Example 1
 
 ```yaml
