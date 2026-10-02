@@ -6,7 +6,7 @@
 * Except: Helps to define when a job does not run
 
 ```yaml
-stage:
+stages:
   - build
   - test
 
