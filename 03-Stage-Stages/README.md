@@ -29,6 +29,6 @@ In GitLab, the Default pipeline stages are:
 * test
 * deploy
 * .post
-.pre -> will always be the first stage, we cannot change it.
-.post -> will always be the last stage, we cannot change it as well.
-builds, test & deploy -> these stages sequence we can change
+* .pre -> will always be the first stage, we cannot change it.
+* .post -> will always be the last stage, we cannot change it as well.
+* builds, test & deploy -> these stages sequence we can change
