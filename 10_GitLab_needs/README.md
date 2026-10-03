@@ -26,4 +26,4 @@ deploy_job:
     - echo "This is parallely executing"
 ```
 
-![needs](image/needs.png)
+![needs](images/needs.png)
