@@ -6,6 +6,8 @@
 #### Possible inclueds
 
 - [include:local](https://docs.gitlab.com/ci/yaml/#includelocal)
-- []()
-- []()
-- []()
+- [include:project](https://docs.gitlab.com/ci/yaml/#includeproject)
+- [include:remote](https://docs.gitlab.com/ci/yaml/#includeremote)
+- [include:template](https://docs.gitlab.com/ci/yaml/#includetemplate)
+
+
