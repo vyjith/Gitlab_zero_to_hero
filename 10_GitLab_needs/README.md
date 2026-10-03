@@ -24,4 +24,4 @@ deploy_job:
   needs: []
   script:
     - echo "This is parallely executing"
-```yaml
+```
