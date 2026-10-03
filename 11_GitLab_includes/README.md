@@ -11,3 +11,62 @@
 - [include:template](https://docs.gitlab.com/ci/yaml/#includetemplate)
 
 
+## Include Example
+
+## Project strcuture
+
+gitlab-project/
+│
+├── .gitlab-ci.yml
+│
+└── .gitlab/
+    └── ci/
+        ├── build.yml
+        └── test.yml
+
+1. Main .gitlab-ci.yml
+
+```yaml
+include:
+  - local: '.gitlab/ci/build.yml'
+  - local: '.gitlab/ci/test.yml'
+
+stages:
+  - build
+  - test
+```
+2. .gitlab/ci/build.yml
+
+```yaml
+build_job:
+  stage: build
+  script:
+    - echo "Building application"
+    - echo "Build completed"
+```
+
+3. .gitlab/ci/test.yml
+
+```yaml
+test_job:
+  stage: test
+  script:
+    - echo "Running tests"
+    - echo "Tests completed"
+```
+
+## How it works:
+
+.gitlab-ci.yml
+      |
+      | include:local
+      |
+      +---------> .gitlab/ci/build.yml
+      |                 |
+      |                 v
+      |             build_job
+      |
+      +---------> .gitlab/ci/test.yml
+                        |
+                        v
+                    test_job
