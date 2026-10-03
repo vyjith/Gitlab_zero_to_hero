@@ -30,7 +30,7 @@ docker_job_build:
   stage: build
   script:
     - echo "Docker build "
-  artifact:
+  artifacts:
      paths:
        - $CI_PROJECT_DIR
      exclude:
