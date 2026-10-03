@@ -30,3 +30,53 @@ build:
     - docker build -t $CONTAINER_IMAGE
     - docker push $CONTAINER_IMAGE
 ```
+
+## You can use the following Docker file image and index.html file for this project
+
+1. Dockerfile
+
+```yaml
+FROM nginx:latest
+
+# Copy your content files (webpages, static assets)
+COPY index.html /usr/share/nginx/html
+
+# Start nginx in the foreground
+CMD ["nginx", "-g", "daemon off;"]
+```
+2. index.html
+
+```yaml
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Light Demo Page</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 3em;
+      color: #333;
+      margin-bottom: 12px;
+    }
+
+    p {
+      line-height: 2;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to the Demo Page!</h1>
+  <p>This is a simple example of an HTML Page deployed via GitLab CI/CD</p>
+</body>
+</html>
+
+```
