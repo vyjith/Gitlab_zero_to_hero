@@ -15,6 +15,7 @@
 
 ## Project strcuture
 
+```yaml
 gitlab-project/
 │
 ├── .gitlab-ci.yml
@@ -23,6 +24,7 @@ gitlab-project/
     └── ci/
         ├── build.yml
         └── test.yml
+```
 
 1. Main .gitlab-ci.yml
 
@@ -57,6 +59,7 @@ test_job:
 
 ## How it works:
 
+```yaml
 .gitlab-ci.yml
       |
       | include:local
@@ -70,3 +73,4 @@ test_job:
                         |
                         v
                     test_job
+```
